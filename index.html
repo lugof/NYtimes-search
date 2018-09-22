@@ -111,10 +111,15 @@
             var article = $("<div>", { class: "article" });
             var title = $("<h2>").text(articleData.headline.main);
             var snippet = $("<p>").text(articleData.snippet);
-
+                var articleLink = $("<a>", {
+                class: " btn btn-info",
+                text: "Read More",
+                target: "_blank",
+                href: articleData.web_url
+            })
             article.append(title);
             article.append(snippet);
-
+            article.append(articleLink);
             $("#results").append(article);
         }
 
