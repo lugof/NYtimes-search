@@ -81,7 +81,7 @@
             var startYear = $("#startYear").val();
             var endYear = $("#endYear").val();
 
-            var queryURL = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&page=0&sort=newest";
+            var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + searchTerm + "&page=0&sort=newest";
 
             if (startYear !== "") {
                 startYear += "0101";
